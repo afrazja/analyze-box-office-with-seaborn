@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+/* Global base styles for the app */
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Baloo 2", ui-sans-serif, system-ui, -apple-system, Segoe UI,
+    Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: linear-gradient(180deg, #e0f2fe 0%, #f3f8ff 50%, #e9d5ff 100%);
+}
+
+/* Cute, subtle hover animations */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-2deg); }
+  50% { transform: rotate(2deg); }
+}
+
+.hover-wiggle:hover {
+  animation: wiggle 300ms ease-in-out;
+}
+
+/* Bubble button shadow helper */
+.bubble-shadow {
+  box-shadow: 0 10px 0 rgba(0, 0, 0, 0.08);
+}
